@@ -30,6 +30,12 @@
     <link rel="stylesheet" href="dist/css/skeleton.css">
     <link rel="stylesheet" href="css/custom.css">
 
+    <!-- California poppy orange links; preserve existing typography and layout -->
+    <style>
+        a, a:visited { color: #D94E00; }
+        a:hover, a:focus { color: #A83C00; }
+    </style>
+
     <!-- Scripts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -58,7 +64,6 @@
         <div class="value-props row">
             <div class="one-half column"> <img class="u-max-full-width" src="images/photo.jpg"> </div>
             <div class="one-half column">
-                <p>
                 <h5>
                     <b>Assistant Professor</b><br />
                     ARE <br />
@@ -84,14 +89,12 @@
                                 Github</a></td>
                 </table>
                 <p>
-                <p>
                     <button id="email" class="tooltip" title="Click to copy!" onclick="copyEmail()">
                         <span class="noupper copy-button" style="margin-right: 5%">sklosin@ucdavis.edu</span><i
                             class="fa-regular fa-copy" style="font-size: 14px"></i>
                     </button>
                 </p>
             </div>
-            </button>
 
         </div>
 
@@ -110,6 +113,31 @@ I received my PhD in Economics from MIT, where I was also part of the Interdisci
 
         <div class="docs-section" id="media">
             <h6 class="docs-header">Research Papers</h6>
+
+            <ul>
+                <p class="title">Simple Standard Errors for Complicated (Quasi-)Experimental Designs (2026)</p>
+                <p class="authors">Sylvia Klosin and <a href="https://www.jonathandroth.com/">Jonathan Roth</a>.</p>
+                <a href="https://arxiv.org/abs/2610.12674" target="_blank">[arXiv]</a>
+                <details>
+                    <summary>abstract</summary>
+                    We develop standard errors for estimates of causal effects in settings where the distribution of
+                    treatment exposures is known but potentially exhibits complicated dependence patterns across units.
+                    Such dependence arises, for example, in settings with spillovers/interference across units or when
+                    the treatment assignment is spatially correlated. Our variance estimator generalizes several
+                    properties of the Neyman variance estimator for completely randomized experiments to general designs:
+                    it is unbiased for an upper bound on the variance from the design-based perspective; the
+                    conservativeness of this upper bound depends on the heterogeneity of treatment effects; and it is
+                    also valid under certain forms of super-population sampling of the potential outcomes. Our estimator
+                    reduces to standard approaches in simple designs, such as the Neyman variance estimator in completely
+                    randomized experiments and the cluster-robust variance estimator in cluster-randomized experiments.
+                    We show that the proposed estimator is admissible among the class of quadratic-form variance
+                    estimators, and derive asymptotic conditions under which it is consistent for an upper bound on the
+                    asymptotic variance of the treatment effect estimator. In simulations and applications based on two
+                    empirical studies, one with peer effects and another with a spatially correlated treatment, we find
+                    that the proposed variance estimator performs well, and in some cases yields standard errors that
+                    are 2-3 times shorter than those of existing alternatives.
+                </details>
+            </ul>
 
             <ul>
                 <p class="title">Dynamic Biases of Static Panel Data Estimators (2024)</p>
@@ -255,9 +283,41 @@ I received my PhD in Economics from MIT, where I was also part of the Interdisci
                     derived policy recommendation is to update the educational curriculum to expose children to
                     computers to a higher degree, which may then act as a social leveler.
                 </details>
+            </ul>
 
+        </div>
+        <!-- Other research -->
+        <div class="docs-section" id="other-research">
+            <h6 class="docs-header">Other Research</h6>
+            <ul>
+                <p class="title">Unpriced Diversification in US Crop Insurance (2026)</p>
+                <p class="authors">Sylvia Klosin and <a href="https://www.adam-solomon.com/">Adam Solomon</a>.</p>
+                <p class="authors"><i>NBER book chapter, Risk and Risk Management in the Agricultural Economy</i>.</p>
+                <a href="https://www.nber.org/books-and-chapters/risk-and-risk-management-agricultural-economy/unpriced-diversification-us-crop-insurance" target="_blank">[NBER]</a>
+                <details>
+                    <summary>abstract</summary>
+                    As climate change intensifies weather-related risks, agricultural losses become more correlated
+                    across space, increasing the importance of well-designed crop insurance. A core design choice in
+                    the Federal Crop Insurance Program (FCIP) is unit structure: farmers can insure fields separately
+                    or aggregate them into a single policy. Aggregate policies are discounted because aggregation
+                    mechanically reduces expected payouts when yields are imperfectly correlated. But the current
+                    formula does not account for the endogeneity of correlation: farmers with aggregate policies
+                    reduce crop diversification, raising correlation and eroding the actuarial basis for the discount.
+                    We show how diversification could be priced directly. Focusing on wheat, we identify two observable
+                    variables that could be used for pricing: the mixture of winter versus spring varieties and the
+                    number of fields planted. Using county-level claims data, we estimate the relationship between
+                    wheat diversification and within-farm yield correlation, then use simulations calibrated to FCIP
+                    contracts to characterize how correlation affects the gap between aggregate and separate payouts.
+                    We show that current pricing misses economically meaningful variation in expected payouts: for a
+                    four-field farm, moving from a 50/50 winter-spring mixture to full concentration in one variety
+                    increases expected aggregate payouts from 65 percent to 81 percent of separate payouts, a 16
+                    percentage point unpriced swing. Incorporating these factors would allow farmers to internalize
+                    the costs of their diversification decisions, reducing moral hazard, and improving the program's
+                    fiscal performance.
+                </details>
+            </ul>
+        </div>
 
-</div>
 <div class="docs-section" id="software">
     <h6 class="docs-header">Software</h6>
     <ul>
